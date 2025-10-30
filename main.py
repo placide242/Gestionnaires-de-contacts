@@ -14,11 +14,23 @@ def information(nom, prenom, email, telephone): # Crée un dictionnaire pour un 
 def ajouter_contacts(liste_contacts):  # Ajoute un contact à la liste
     nom = input("Entrez le nom du contact: ")
     prenom = input("Entrez le prénom du contact: ")
-    email = input("Entrez l'email du contact: ")
+    
+    domaines_valides = ["@gmail.com", "@yahoo.com", "@outlook.com", "@hotmail.com"]
+
+    while True:
+        email = input("Entrez l'email du contact: ").strip().lower()
+        if any(email.endswith(domaine) for domaine in domaines_valides):
+            break
+        else:
+            print("Email invalide. Veuillez entrer un email avec un domaine valide (gmail.com, yahoo.com, outlook.com, hotmail.com).")
+    
+    
     telephone = input("Entrez le numéro de téléphone du contact: ")
     contact = information(nom, prenom, email, telephone)
 
     liste_contacts.append(contact)
+
+    print("Contact ajouté avec succès !")
     return liste_contacts
 
 def afficher_contacts(liste_contacts):  # Affiche tous les contacts de la liste
