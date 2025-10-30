@@ -22,7 +22,7 @@ def ajouter_contacts(liste_contacts):  # Ajoute un contact à la liste
         if any(email.endswith(domaine) for domaine in domaines_valides):
             break
         else:
-            print("Email invalide. Veuillez entrer un email avec un domaine valide (gmail.com, yahoo.com, outlook.com, hotmail.com).")
+            print("Email invalide. Veuillez entrer un email avec un domaine valide (@gmail.com, @yahoo.com, @outlook.com, @hotmail.com).")
     
     
     telephone = input("Entrez le numéro de téléphone du contact: ")
