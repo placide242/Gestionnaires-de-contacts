@@ -1,0 +1,5 @@
+Vous venez d'être nommé(e) responsable de la gestion des contacts pour l'organisation d'un festival de musique. 
+Votre mission est de créer une application de gestion de contacts pour gérer les artistes, les organisateurs et les sponsors du festival.
+Pour chaque contact, vous devez stocker les informations suivantes : nom, prénom, numéro de téléphone, adresse e-mail.
+Vous devez utiliser des variables pour stocker les informations de chaque contact, des listes pour stocker l'ensemble des contacts, 
+et des dictionnaires pour stocker les informations spécifiques à chaque contact.

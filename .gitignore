@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# VS Code
+.vscode/
+
+# Environnement virtuel
+venv/
+env/
+```
+
+Explication des règles :
+- `__pycache__/` : ignore les fichiers de cache Python
+- `*.py[cod]` : ignore les fichiers compilés Python (.pyc, .pyo, .pyd)  
+- `.vscode/` : ignore les paramètres VS Code spécifiques à ton ordinateur
+- `venv/` et `env/` : ignore l'environnement virtuel Python s'il y en a un
+
+Pour vérifier que ça fonctionne :
+1. Ouvre le panneau Git dans VS Code (icône avec branches)
+2. Les fichiers/dossiers listés dans .gitignore ne devraient plus apparaître dans les changements
+
+Le .gitignore est particulièrement important quand on travaille en équipe car il évite de polluer le dépôt avec des fichiers inutiles ou spécifiques à chaque développeur.# filepath: .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+
+# VS Code
+.vscode/
+
+# Environnement virtuel
+venv/
+env/
+```
+
+Explication des règles :
+- `__pycache__/` : ignore les fichiers de cache Python
+- `*.py[cod]` : ignore les fichiers compilés Python (.pyc, .pyo, .pyd)  
+- `.vscode/` : ignore les paramètres VS Code spécifiques à ton ordinateur
+- `venv/` et `env/` : ignore l'environnement virtuel Python s'il y en a un
+
+Pour vérifier que ça fonctionne :
+1. Ouvre le panneau Git dans VS Code (icône avec branches)
+2. Les fichiers/dossiers listés dans .gitignore ne devraient plus apparaître dans les changements
+
+Le .gitignore est particulièrement important quand on travaille en équipe car il évite de polluer le dépôt avec des fichiers inutiles ou spécifiques à chaque développeur.
